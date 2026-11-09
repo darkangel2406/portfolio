@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-creator-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Complete No-Code Portfolio Creator with 3D Book Engine and 55 Templates",
+  "scripts": {
+    "install:all": "npm --prefix client install && npm --prefix server install",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "dev": "node scripts/dev.js",
+    "build:client": "npm --prefix client run build",
+    "start": "node server/server.js"
+  }
+}

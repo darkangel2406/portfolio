@@ -1,0 +1,2544 @@
+{
+  "users": [
+    {
+      "id": "demo-user-id-001",
+      "email": "demo@example.com",
+      "passwordHash": "$2a$10$iXPXPPiPRWMLNXCeAJusc.MN4RpYw.2lfAIk6cgBsT/uuz2JLo7uq",
+      "name": "Demo User (Free Plan)",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T15:49:34.009Z",
+      "createdAt": "2026-10-17T15:00:00.000Z",
+      "updatedAt": "2026-10-17T15:49:34.011Z"
+    },
+    {
+      "id": "premium-user-id-002",
+      "email": "premium@example.com",
+      "passwordHash": "$2a$10$iXPXPPiPRWMLNXCeAJusc.MN4RpYw.2lfAIk6cgBsT/uuz2JLo7uq",
+      "name": "Premium Creator",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T15:00:00.000Z",
+      "createdAt": "2026-10-17T15:00:00.000Z",
+      "updatedAt": "2026-10-17T15:00:00.000Z"
+    },
+    {
+      "id": "7d93864b-d409-4dc1-84a1-7bece850d8f9",
+      "email": "test_dev_1792251253801@example.com",
+      "passwordHash": "$2a$10$H2Gi/BnBobrA6pB1teY6aOUEkm813n/wqbVIYfo3oErNuGkHqroq2",
+      "name": "Aarav Sharma",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T15:34:14.152Z",
+      "createdAt": "2026-10-17T15:34:13.947Z",
+      "updatedAt": "2026-10-17T15:34:14.152Z"
+    },
+    {
+      "id": "95f36a75-4d48-474d-81d9-0def773ad738",
+      "email": "test_dev_1792253685863@example.com",
+      "passwordHash": "$2a$10$EIOqOaWdmrG86yLFQGewM.e16CkjDPUBrpmHGCwC.xW.TXTXMC02a",
+      "name": "Aarav Sharma",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T16:14:46.211Z",
+      "createdAt": "2026-10-17T16:14:46.026Z",
+      "updatedAt": "2026-10-17T16:14:46.211Z"
+    },
+    {
+      "id": "afe97a53-9201-4d5a-a5fe-ce1b471560aa",
+      "email": "test_dev_1792258107917@example.com",
+      "passwordHash": "$2a$10$3PE1Fq3Hic278QWKhFBMnuIWoEzUmlalRI8leIDZ7wpihs1Jsdx2G",
+      "name": "Aarav Sharma",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T17:28:28.222Z",
+      "createdAt": "2026-10-17T17:28:28.059Z",
+      "updatedAt": "2026-10-17T17:28:28.222Z"
+    },
+    {
+      "id": "860b712f-a20a-4895-a6e7-9a30ae13e4eb",
+      "email": "test_dev_1792261619721@example.com",
+      "passwordHash": "$2a$10$aKK.nDIdkXgD.6ogKWtQLucKcvwnPkpYX6AKh4fDZwIAHwXQwexQK",
+      "name": "Aarav Sharma",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T18:27:00.103Z",
+      "createdAt": "2026-10-17T18:26:59.875Z",
+      "updatedAt": "2026-10-17T18:27:00.104Z"
+    },
+    {
+      "id": "5042986d-026d-40ef-a5ec-df709b97b3b3",
+      "email": "test_dev_1792263244932@example.com",
+      "passwordHash": "$2a$10$SyGJ2iGDF7mSP.NkhRYsb.lk2lO.J1D79kkO1rQElzxdzQpLaYF5a",
+      "name": "Aarav Sharma",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-17T18:54:05.334Z",
+      "createdAt": "2026-10-17T18:54:05.048Z",
+      "updatedAt": "2026-10-17T18:54:05.334Z"
+    },
+    {
+      "id": "1be22050-182c-4884-8e5a-c9326e86f082",
+      "email": "test_dev_1792471662218@example.com",
+      "passwordHash": "$2a$10$SIDqyZrgddLg3Vj8WtRQ7u8xXB8HWnIQ4juULvlgHJqxxDR315IBG",
+      "name": "Aarav Sharma",
+      "isPremium": false,
+      "premiumPurchasedAt": null,
+      "createdAt": "2026-10-20T04:47:42.705Z",
+      "updatedAt": "2026-10-20T04:47:42.705Z"
+    },
+    {
+      "id": "166d4305-79d7-43d0-88c5-7d782f7f5daa",
+      "email": "test_dev_1792471827038@example.com",
+      "passwordHash": "$2a$10$GjjCmU4IEsyBLEx4UCP8wOaSi6P/IU8YWhedxFBB227uIXDZ6z6Oq",
+      "name": "Aarav Sharma",
+      "isPremium": true,
+      "premiumPurchasedAt": "2026-10-20T04:50:27.288Z",
+      "createdAt": "2026-10-20T04:50:27.153Z",
+      "updatedAt": "2026-10-20T04:50:27.288Z"
+    }
+  ],
+  "portfolios": [
+    {
+      "id": "2c99ea18-b31d-45c8-8872-b0188d049168",
+      "userId": "guest-creator",
+      "title": "Alex River — Color Theory",
+      "slug": "my-portfolio",
+      "templateId": "color-theory",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#f97316",
+        "cardBorderColor": "#1a79ff",
+        "headingColor": "#ff0000"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-10-30T17:39:35.865Z",
+      "updatedAt": "2026-10-30T17:39:35.865Z",
+      "publishedAt": null
+    },
+    {
+      "id": "1a106dd1-da49-4f53-858e-728afb609eaf",
+      "userId": "guest-creator",
+      "title": "Alex River — OpenBook Portfolio",
+      "slug": "my-portfolio-1",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#3b82f6"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-10-31T12:07:16.961Z",
+      "updatedAt": "2026-10-31T12:07:16.961Z",
+      "publishedAt": null
+    },
+    {
+      "id": "1a579e76-a55f-4d25-b1d4-64457618400c",
+      "userId": "guest-creator",
+      "title": "Alex River — OnePage Flow",
+      "slug": "my-portfolio-2",
+      "templateId": "onepage-flow",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#6366f1"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-10-31T19:17:47.673Z",
+      "updatedAt": "2026-10-31T19:17:47.677Z",
+      "publishedAt": null
+    },
+    {
+      "id": "a6608cc1-c37a-462e-a366-3387810c4dd1",
+      "userId": "guest-creator",
+      "title": "Alex River — Flipfolio",
+      "slug": "my-portfolio-3",
+      "templateId": "flipfolio",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#10b981"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-04T05:09:56.731Z",
+      "updatedAt": "2026-11-04T05:09:56.743Z",
+      "publishedAt": null
+    },
+    {
+      "id": "e4a24255-d90d-41b8-a519-fb6c6d3d4069",
+      "userId": "guest-creator",
+      "title": "Alex River — OpenBook Portfolio",
+      "slug": "my-portfolio-4",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#3b82f6",
+        "headingColor": "#a63dd6",
+        "textColor": "#3992fe",
+        "cardBgColor": "#2d4f9f",
+        "cardBorderColor": "#749bd2",
+        "subtextColor": "#66a6ff"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-07T18:16:04.916Z",
+      "updatedAt": "2026-11-07T18:16:04.919Z",
+      "publishedAt": null
+    },
+    {
+      "id": "8b2ebcb2-f91e-4eeb-a5a2-633d88d95faa",
+      "userId": "guest-creator",
+      "title": "Alex River — OpenBook Portfolio",
+      "slug": "my-portfolio-5",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#2563eb",
+        "headingColor": "#0f172a",
+        "textColor": "#334155",
+        "nameFont": "JetBrains Mono",
+        "cardBgColor": "#f6f967",
+        "subtextColor": "#475569",
+        "cardBorderColor": "#cbd5e1"
+      },
+      "profile": {
+        "fullName": "AMOSE",
+        "headline": "Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "amosanand320@gmail.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        },
+        {
+          "title": "summa Ai ppt",
+          "description": "Describe your accomplishments and architecture.",
+          "techStack": [
+            "React",
+            "Node.js"
+          ],
+          "liveUrl": "",
+          "githubUrl": ""
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-07T18:21:25.267Z",
+      "updatedAt": "2026-11-07T18:21:25.267Z",
+      "publishedAt": null
+    },
+    {
+      "id": "60f9bd45-4a59-46b6-a8ce-bc7e8967f3c3",
+      "userId": "guest-creator",
+      "title": "My Professional Portfolio",
+      "slug": "my-portfolio-6",
+      "templateId": "vintage-journal",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "accentColor": "#3b82f6",
+        "bookCoverTheme": "leather",
+        "mode": "dark",
+        "headingColor": "#e2ba1d",
+        "cardBgColor": "#8793b0",
+        "nameFont": "Playfair Display",
+        "nameWeight": "700",
+        "nameStyle": "italic",
+        "nameTransform": "none",
+        "headlineFont": "Outfit",
+        "headlineWeight": "500",
+        "headlineStyle": "normal",
+        "headlineTransform": "none",
+        "sectionTitleFont": "Playfair Display",
+        "sectionTitleWeight": "700",
+        "sectionTitleStyle": "normal",
+        "sectionTitleTransform": "none",
+        "cardTitleFont": "Playfair Display",
+        "cardTitleWeight": "700",
+        "bodyFont": "Plus Jakarta Sans",
+        "bodyWeight": "400",
+        "nameColor": "#756938",
+        "headlineColor": "#d4af37",
+        "sectionTitleColor": "#fef3c7",
+        "cardTitleColor": "#fde68a",
+        "bodyTextColor": "#e2e8f0",
+        "textColor": "#8a1b0f",
+        "subtextColor": "#ba34d5"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Developer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://example.com",
+        "resumeUrl": "",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-07T18:40:29.911Z",
+      "updatedAt": "2026-11-07T19:05:19.618Z",
+      "publishedAt": null
+    },
+    {
+      "id": "b85d684c-e49b-49bf-9d4f-a5fe96a815da",
+      "userId": "guest-creator",
+      "title": "My Professional Portfolio",
+      "slug": "my-portfolio-7",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "accentColor": "#3b82f6",
+        "bookCoverTheme": "leather",
+        "mode": "dark"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Developer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://example.com",
+        "resumeUrl": "",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-07T19:05:31.315Z",
+      "updatedAt": "2026-11-07T19:10:38.784Z",
+      "publishedAt": null
+    },
+    {
+      "id": "85c9629e-ecef-4c27-b81b-ee19865bbc77",
+      "userId": "guest-creator",
+      "title": "My Professional Portfolio",
+      "slug": "my-portfolio-8",
+      "templateId": "vintage-journal",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "accentColor": "#3b82f6",
+        "bookCoverTheme": "leather",
+        "mode": "dark",
+        "cardBorderColor": "#4e8ce4",
+        "headingColor": "#fef3c7",
+        "nameFont": "Playfair Display",
+        "nameWeight": "700",
+        "nameStyle": "italic",
+        "nameTransform": "uppercase",
+        "headlineFont": "Outfit",
+        "headlineWeight": "500",
+        "headlineStyle": "normal",
+        "headlineTransform": "none",
+        "sectionTitleFont": "Playfair Display",
+        "sectionTitleWeight": "700",
+        "sectionTitleStyle": "normal",
+        "sectionTitleTransform": "none",
+        "cardTitleFont": "Playfair Display",
+        "cardTitleWeight": "700",
+        "bodyFont": "Plus Jakarta Sans",
+        "bodyWeight": "400",
+        "nameColor": "#cdae32",
+        "headlineColor": "#d4af37",
+        "sectionTitleColor": "#fef3c7",
+        "cardTitleColor": "#fde68a",
+        "bodyTextColor": "#e2e8f0",
+        "textColor": "#76c76b",
+        "subtextColor": "#d3ae36",
+        "cardBgColor": "#2a4279"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Developer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://example.com",
+        "resumeUrl": "",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-08T14:11:51.869Z",
+      "updatedAt": "2026-11-08T14:11:51.874Z",
+      "publishedAt": null
+    },
+    {
+      "id": "18d32971-c27f-420a-a44d-97ddecbd263a",
+      "userId": "guest-creator",
+      "title": "My Professional Portfolio",
+      "slug": "my-portfolio-9",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "accentColor": "#3b82f6",
+        "bookCoverTheme": "leather",
+        "mode": "dark",
+        "cardBgColor": "#85a9ff",
+        "headingColor": "#984b0b"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Developer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://example.com",
+        "resumeUrl": "",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-08T15:00:05.531Z",
+      "updatedAt": "2026-11-08T15:00:05.531Z",
+      "publishedAt": null
+    },
+    {
+      "id": "6d8743e7-24b8-47e9-9091-c137ecadff4b",
+      "userId": "guest-creator",
+      "title": "Alex River — OpenBook Portfolio",
+      "slug": "my-portfolio-10",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#3b82f6"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-08T16:47:33.900Z",
+      "updatedAt": "2026-11-08T16:47:33.900Z",
+      "publishedAt": null
+    },
+    {
+      "id": "c908a98d-2f4b-4ceb-b534-2d17190d1756",
+      "userId": "guest-creator",
+      "title": "Alex River — OpenBook Portfolio",
+      "slug": "my-portfolio-11",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#3b82f6"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-08T17:39:52.803Z",
+      "updatedAt": "2026-11-08T17:39:52.803Z",
+      "publishedAt": null
+    },
+    {
+      "id": "fc56de9d-1e65-4f2e-8666-643cc85f3385",
+      "userId": "guest-creator",
+      "title": "My Professional Portfolio",
+      "slug": "my-portfolio-12",
+      "templateId": "open-book",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "accentColor": "#3b82f6",
+        "bookCoverTheme": "leather",
+        "mode": "dark"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Developer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://example.com",
+        "resumeUrl": "",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-08T18:56:36.613Z",
+      "updatedAt": "2026-11-08T18:56:36.613Z",
+      "publishedAt": null
+    },
+    {
+      "id": "9844d76e-c665-4206-9526-00bda4a8d6bb",
+      "userId": "guest-creator",
+      "title": "Alex River — Mystic Pages",
+      "slug": "my-portfolio-13",
+      "templateId": "mystic-pages",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "bookCoverTheme": "leather",
+        "accentColor": "#06b6d4"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Engineer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex.river@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://alexriver.dev",
+        "resumeUrl": "https://example.com/resume.pdf",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Docker / Cloud",
+          "category": "DevOps",
+          "level": "Intermediate"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-09T18:10:11.030Z",
+      "updatedAt": "2026-11-09T18:20:31.996Z",
+      "publishedAt": null
+    },
+    {
+      "id": "7711adc0-78e7-4212-aad4-07baaf02a908",
+      "userId": "guest-creator",
+      "title": "My Professional Portfolio",
+      "slug": "my-portfolio-14",
+      "templateId": "vintage-journal",
+      "status": "draft",
+      "views": 0,
+      "themeConfig": {
+        "accentColor": "#3b82f6",
+        "bookCoverTheme": "leather",
+        "mode": "dark"
+      },
+      "profile": {
+        "fullName": "Alex River",
+        "headline": "Senior Full Stack & AI Systems Developer",
+        "bio": "Passionate about crafting resilient web architectures, elegant user experiences, and high-performance interactive digital tools.",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "location": "Bengaluru, India",
+        "email": "alex@example.com",
+        "phone": "+91 98765 43210",
+        "website": "https://example.com",
+        "resumeUrl": "",
+        "statusBadge": "Open to Opportunities"
+      },
+      "sections": [
+        {
+          "id": "bio",
+          "title": "Biography",
+          "enabled": true,
+          "order": 0
+        },
+        {
+          "id": "skills",
+          "title": "Skills & Stack",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "id": "projects",
+          "title": "Projects",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "id": "experience",
+          "title": "Experience",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "id": "education",
+          "title": "Education",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "enabled": true,
+          "order": 5
+        }
+      ],
+      "skills": [
+        {
+          "name": "React / Next.js",
+          "category": "Frontend",
+          "level": "Expert"
+        },
+        {
+          "name": "Node.js / Express",
+          "category": "Backend",
+          "level": "Expert"
+        },
+        {
+          "name": "TypeScript",
+          "category": "Languages",
+          "level": "Advanced"
+        },
+        {
+          "name": "PostgreSQL / SQLite",
+          "category": "Database",
+          "level": "Advanced"
+        },
+        {
+          "name": "Tailwind / Modern CSS",
+          "category": "Frontend",
+          "level": "Expert"
+        }
+      ],
+      "projects": [
+        {
+          "title": "Quantum Analytics Engine",
+          "description": "High-throughput event streaming analytics dashboard with real-time WebSocket telemetry and 60fps renders.",
+          "techStack": [
+            "React",
+            "Node.js",
+            "Canvas"
+          ],
+          "liveUrl": "https://example.com/demo",
+          "githubUrl": "https://github.com/example/analytics"
+        },
+        {
+          "title": "HyperUI Design Tokens",
+          "description": "Accessible, component-driven design system with dark mode tokens and fluid animations.",
+          "techStack": [
+            "TypeScript",
+            "CSS Modules"
+          ],
+          "liveUrl": "https://example.com/hyperui",
+          "githubUrl": "https://github.com/example/hyperui"
+        }
+      ],
+      "experience": [
+        {
+          "role": "Lead Systems Architect",
+          "company": "Nexus Innovations",
+          "period": "2023 - Present",
+          "description": "Scaled microservices to 10M+ daily events. Spearheaded frontend component modernization and reduced LCP by 45%."
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "school": "Apex Institute of Technology",
+          "year": "2020 - 2024",
+          "grade": "8.9 CGPA",
+          "coursework": "Data Structures, Distributed Systems, Cloud Architecture"
+        }
+      ],
+      "certifications": [
+        {
+          "name": "AWS Certified Solutions Architect",
+          "issuer": "Amazon Web Services",
+          "date": "2024"
+        }
+      ],
+      "socialLinks": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://x.com"
+      },
+      "seo": {
+        "metaTitle": "Alex River — Professional Portfolio",
+        "metaDescription": "Explore my professional portfolio, interactive projects, and work experience."
+      },
+      "createdAt": "2026-11-09T18:21:20.140Z",
+      "updatedAt": "2026-11-09T18:21:20.140Z",
+      "publishedAt": null
+    }
+  ],
+  "transactions": [
+    {
+      "id": "81d2192a-bccd-4061-a7bb-3da1333be362",
+      "userId": "7d93864b-d409-4dc1-84a1-7bece850d8f9",
+      "orderId": "order_1792251254142_z0cne",
+      "paymentId": "pay_test_1792251254146",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-17T15:34:14.143Z",
+      "verifiedAt": "2026-10-17T15:34:14.150Z"
+    },
+    {
+      "id": "e0d46c11-283d-47c9-bf5a-33c50dcb1626",
+      "userId": "demo-user-id-001",
+      "orderId": "order_1792252172413_4uqik",
+      "paymentId": "pay_sandbox_1792252173996",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-17T15:49:32.414Z",
+      "verifiedAt": "2026-10-17T15:49:34.005Z"
+    },
+    {
+      "id": "f16f1dea-a087-41c1-8195-ff4e497cbcf8",
+      "userId": "95f36a75-4d48-474d-81d9-0def773ad738",
+      "orderId": "order_1792253686202_euxhy",
+      "paymentId": "pay_test_1792253686205",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-17T16:14:46.202Z",
+      "verifiedAt": "2026-10-17T16:14:46.210Z"
+    },
+    {
+      "id": "da58a13b-4ed2-4396-b46b-3a1904cc1823",
+      "userId": "afe97a53-9201-4d5a-a5fe-ce1b471560aa",
+      "orderId": "order_1792258108213_vjc1y",
+      "paymentId": "pay_test_1792258108217",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-17T17:28:28.214Z",
+      "verifiedAt": "2026-10-17T17:28:28.221Z"
+    },
+    {
+      "id": "419d8a79-8365-47a7-9b92-7b0ebe11dafd",
+      "userId": "860b712f-a20a-4895-a6e7-9a30ae13e4eb",
+      "orderId": "order_1792261620096_eew6z",
+      "paymentId": "pay_test_1792261620100",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-17T18:27:00.096Z",
+      "verifiedAt": "2026-10-17T18:27:00.102Z"
+    },
+    {
+      "id": "4a634e1f-7aa6-4b59-979f-a32bcb8340f4",
+      "userId": "5042986d-026d-40ef-a5ec-df709b97b3b3",
+      "orderId": "order_1792263245326_xr5ly",
+      "paymentId": "pay_test_1792263245329",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-17T18:54:05.326Z",
+      "verifiedAt": "2026-10-17T18:54:05.332Z"
+    },
+    {
+      "id": "432d7417-388b-41bf-825d-748186ab9325",
+      "userId": "166d4305-79d7-43d0-88c5-7d782f7f5daa",
+      "orderId": "order_1792471827282_im2by",
+      "paymentId": "pay_test_1792471827285",
+      "amount": 20000,
+      "currency": "INR",
+      "status": "success",
+      "provider": "test_sandbox",
+      "createdAt": "2026-10-20T04:50:27.282Z",
+      "verifiedAt": "2026-10-20T04:50:27.287Z"
+    }
+  ]
+}

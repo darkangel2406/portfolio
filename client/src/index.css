@@ -1,0 +1,1341 @@
+/* ==========================================================================
+   FolioVerse Master Design System
+   Modern Glassmorphic Dark UI + 3D Interactive Book Engine + Multi-Page Styles
+   ========================================================================== */
+
+:root {
+  /* Color Tokens */
+  --bg-dark: #090d16;
+  --bg-card: rgba(17, 24, 39, 0.75);
+  --bg-card-hover: rgba(30, 41, 59, 0.85);
+  --bg-surface: #0f172a;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(99, 102, 241, 0.4);
+  --border-glow: rgba(99, 102, 241, 0.6);
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --accent-primary: #6366f1;
+  --accent-secondary: #06b6d4;
+  --accent-emerald: #10b981;
+  --accent-rose: #f43f5e;
+  --accent-amber: #f59e0b;
+
+  --gradient-brand: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --gradient-glow: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', var(--font-sans);
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-book: 'Cinzel', serif;
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-script: 'Caveat', cursive;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 24px rgba(99, 102, 241, 0.35);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(236, 72, 153, 0.06) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Glass Card */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7);
+}
+
+/* Interactive 3D Tilt Hover */
+.interactive-hover-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.interactive-hover-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(99, 102, 241, 0.25);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: var(--gradient-brand);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+.btn-primary:hover {
+  box-shadow: 0 6px 22px rgba(99, 102, 241, 0.55);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-main);
+  border-color: var(--border-subtle);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-main);
+  border-color: var(--border-subtle);
+}
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent-primary);
+}
+
+.btn-accent {
+  background: #10b981;
+  color: #0f172a;
+  font-weight: 700;
+}
+.btn-accent:hover {
+  background: #34d399;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+.btn-lg {
+  padding: 0.85rem 1.75rem;
+  font-size: 1.05rem;
+  border-radius: var(--radius-lg);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-free {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-premium {
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(245, 158, 11, 0.25));
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-signature {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.25));
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+/* Forms */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: 0.015em;
+  margin-bottom: 0.25rem;
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  padding: 0.72rem 1rem;
+  background: #1e293b;
+  border: 1.5px solid #475569;
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.35);
+  background: #0f172a;
+}
+
+.form-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* ==========================================================================
+   3D BOOK ENGINE STYLES (REALISTIC INTERACTIVE 3D PAGE-TURNING)
+   ========================================================================== */
+
+.physical-book-stage {
+  perspective: 2400px;
+  perspective-origin: 50% 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.25rem 1rem;
+  position: relative;
+  overflow: visible;
+}
+
+.book-viewport-wrapper {
+  background: radial-gradient(ellipse at 50% 40%, #1e1b18 0%, #121217 65%, #08080c 100%);
+  border-radius: 16px;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.85);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.st-book-chassis {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 920px;
+  height: 590px;
+  max-width: 98vw;
+  filter: drop-shadow(0 30px 65px rgba(0, 0, 0, 0.75)) drop-shadow(0 12px 28px rgba(0, 0, 0, 0.5));
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.st-book-chassis.single-page-mode {
+  width: 100% !important;
+  max-width: 440px !important;
+  height: auto !important;
+}
+
+.st-book-container {
+  width: 920px;
+  height: 590px;
+  max-width: 100%;
+  position: relative;
+  z-index: 5;
+  border-radius: 6px;
+  overflow: visible;
+}
+
+.st-book-chassis.single-page-mode .st-book-container {
+  width: 100% !important;
+  max-width: 440px !important;
+}
+
+.st-book-chassis.single-page-mode .book-center-spine-highlight,
+.st-book-chassis.single-page-mode .book-paper-stack-left {
+  display: none !important;
+}
+
+@media (max-height: 800px) and (min-width: 769px) {
+  .physical-book-stage {
+    padding: 0.5rem 0.25rem;
+  }
+  .st-book-chassis:not(.single-page-mode) {
+    transform: scale(0.88);
+    transform-origin: center center;
+    margin: -25px 0;
+  }
+}
+
+@media (max-height: 680px) and (min-width: 769px) {
+  .st-book-chassis:not(.single-page-mode) {
+    transform: scale(0.78);
+    transform-origin: center center;
+    margin: -50px 0;
+  }
+}
+
+.st-book-flip-root {
+  display: block;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Realistic Stacked Paper Edges Simulation (Thickness of 200+ physical book pages) */
+.book-paper-stack-left {
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: -9px;
+  width: 10px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #f4ebd8,
+    #f4ebd8 1.5px,
+    #cfbc93 1.5px,
+    #cfbc93 3px
+  );
+  border-radius: 4px 0 0 4px;
+  box-shadow: -3px 0 6px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.book-paper-stack-right {
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  right: -9px;
+  width: 10px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #f4ebd8,
+    #f4ebd8 1.5px,
+    #cfbc93 1.5px,
+    #cfbc93 3px
+  );
+  border-radius: 0 4px 4px 0;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.book-paper-stack-bottom {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: -8px;
+  height: 9px;
+  background: repeating-linear-gradient(
+    to right,
+    #f4ebd8,
+    #f4ebd8 2px,
+    #cfbc93 2px,
+    #cfbc93 3.5px
+  );
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Dark Theme Edge Stack Adaptations */
+.book-style-biography .book-paper-stack-left,
+.book-style-biography .book-paper-stack-right,
+.book-style-mystic .book-paper-stack-left,
+.book-style-mystic .book-paper-stack-right {
+  background: repeating-linear-gradient(
+    to bottom,
+    #242d3d,
+    #242d3d 1.5px,
+    #0f172a 1.5px,
+    #0f172a 3px
+  );
+}
+.book-style-biography .book-paper-stack-bottom,
+.book-style-mystic .book-paper-stack-bottom {
+  background: repeating-linear-gradient(
+    to right,
+    #242d3d,
+    #242d3d 2px,
+    #0f172a 2px,
+    #0f172a 3.5px
+  );
+}
+
+/* Central Spine Binding Hinge Highlight (Deep central gutter shadow) */
+.book-center-spine-highlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 28px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.28) 0%,
+    rgba(0, 0, 0, 0.05) 45%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(0, 0, 0, 0.05) 55%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+  pointer-events: none;
+  z-index: 25;
+}
+
+/* Base Page Styling */
+.st-page {
+  background-color: #faf6ee;
+  color: #1e293b;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.st-page-inner {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.6rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Slim book scrollbar */
+.st-page-inner::-webkit-scrollbar {
+  width: 5px;
+}
+.st-page-inner::-webkit-scrollbar-track {
+  background: transparent;
+}
+.st-page-inner::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.book-style-biography .st-page-inner::-webkit-scrollbar-thumb,
+.book-style-mystic .st-page-inner::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Theme Page Variations */
+.book-style-openbook .st-page:not([data-density="hard"]) {
+  background-color: #faf7f2;
+  color: #0f172a;
+  font-family: var(--font-serif);
+}
+.book-style-openbook .book-page-left {
+  background-image: linear-gradient(to right, #f4eee3 0%, #faf7f2 12%, #faf7f2 92%, #e5dcce 100%);
+}
+.book-style-openbook .book-page-right {
+  background-image: linear-gradient(to left, #f4eee3 0%, #faf7f2 12%, #faf7f2 92%, #e5dcce 100%);
+}
+
+.book-style-vintage .st-page:not([data-density="hard"]) {
+  background-color: #f7eedb;
+  color: #382414;
+  font-family: var(--font-serif);
+  background-image: radial-gradient(circle at 50% 50%, rgba(180, 83, 9, 0.04) 0%, transparent 80%);
+}
+.book-style-vintage .book-page-left {
+  border-right: 1px dashed rgba(120, 53, 15, 0.3);
+}
+.book-style-vintage .book-page-right {
+  border-left: 1px dashed rgba(120, 53, 15, 0.2);
+}
+
+.book-style-biography .st-page:not([data-density="hard"]) {
+  background-color: #0b1120;
+  color: #e2e8f0;
+  font-family: var(--font-serif);
+}
+.book-style-biography .book-page-left {
+  border-right: 1px solid rgba(148, 163, 184, 0.2);
+}
+.book-style-biography .book-page-right {
+  border-left: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.book-style-mystic .st-page:not([data-density="hard"]) {
+  background-color: #0d091e;
+  color: #e0e7ff;
+  background-image: 
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 60%);
+}
+.book-style-mystic .book-page-left {
+  border-right: 1px solid rgba(139, 92, 246, 0.3);
+}
+.book-style-mystic .book-page-right {
+  border-left: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.book-style-flipfolio .st-page:not([data-density="hard"]) {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-sans);
+}
+.book-style-flipfolio .book-page-left {
+  border-right: 2px solid #e5e7eb;
+}
+.book-style-flipfolio .book-page-right {
+  border-left: 2px solid #e5e7eb;
+}
+
+/* Crease & Spine Shadow on Inner Leaves */
+.book-gutter-shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  pointer-events: none;
+  z-index: 5;
+}
+.book-page-left .book-gutter-shadow {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.14), transparent);
+}
+.book-page-right .book-gutter-shadow {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.14), transparent);
+}
+.book-style-biography .book-page-left .book-gutter-shadow,
+.book-style-mystic .book-page-left .book-gutter-shadow {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.45), transparent);
+}
+.book-style-biography .book-page-right .book-gutter-shadow,
+.book-style-mystic .book-page-right .book-gutter-shadow {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), transparent);
+}
+
+/* Folio Headers & Footers */
+.page-folio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.15rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.book-style-biography .page-folio-header,
+.book-style-mystic .page-folio-header {
+  border-bottom-color: rgba(255, 255, 255, 0.14);
+}
+
+.page-folio-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 0.75rem;
+  margin-top: auto;
+  font-size: 0.78rem;
+}
+.book-style-biography .page-folio-footer,
+.book-style-mystic .page-folio-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+.book-page-num {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* HARDCOVER STYLING (Rigid, Embossed, Foil Stamped) */
+.page-cover-front,
+.page-cover-back {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.6);
+}
+
+.cover-spine-crease {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 18px;
+  width: 18px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0.09) 50%, rgba(0, 0, 0, 0.35));
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.cover-ornate-frame {
+  border: 2px solid rgba(255, 255, 255, 0.32);
+  padding: 2.25rem 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 380px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 0 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.cover-emblem-wrapper {
+  margin: 0 auto 0.75rem;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.cover-vibe-tag {
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.45rem;
+}
+
+.cover-book-title {
+  font-family: var(--font-book);
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 0.6rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cover-golden-divider {
+  width: 75px;
+  height: 2px;
+  background: currentColor;
+  margin: 0.6rem auto 1rem;
+  opacity: 0.65;
+}
+
+.cover-author-name {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.95;
+  margin-bottom: 0.2rem;
+}
+
+.cover-author-headline {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 1.25rem;
+}
+
+.cover-open-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cover-open-cue:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* Distinct Cover Artworks */
+.cover-theme-leather {
+  background: radial-gradient(circle at 30% 30%, #5d4037 0%, #3e2723 60%, #1a120b 100%);
+  border: 4px solid #b8860b;
+  color: #fef3c7;
+}
+.cover-theme-vintage {
+  background: radial-gradient(circle at 40% 40%, #78350f 0%, #451a03 70%, #1f1006 100%);
+  border: 4px double #d97706;
+  color: #fef3c7;
+}
+.cover-theme-biography {
+  background: radial-gradient(circle at 30% 30%, #1e293b 0%, #0f172a 65%, #020617 100%);
+  border: 4px solid #94a3b8;
+  color: #f8fafc;
+}
+.cover-theme-mystic {
+  background: radial-gradient(circle at 50% 50%, #2e1065 0%, #0f0728 60%, #05020c 100%);
+  border: 4px solid #c084fc;
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.4);
+  color: #e0e7ff;
+}
+.cover-theme-flipfolio {
+  background: radial-gradient(circle at 30% 30%, #064e3b 0%, #022c22 65%, #011612 100%);
+  border: 4px solid #10b981;
+  color: #ecfdf5;
+}
+
+/* Floating Stage Navigation Buttons */
+.book-stage-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 35;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.book-stage-nav-btn:hover:not(:disabled) {
+  background: rgba(99, 102, 241, 0.9);
+  border-color: rgba(99, 102, 241, 0.8);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.65);
+}
+.book-stage-nav-btn:disabled {
+  opacity: 0.18;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.book-nav-prev {
+  left: 18px;
+}
+.book-nav-next {
+  right: 18px;
+}
+@media (max-width: 900px) {
+  .book-stage-nav-btn {
+    display: none;
+  }
+}
+
+/* Controls Bar & Indicators */
+.book-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+  z-index: 30;
+}
+
+.book-page-indicator-pill {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.book-chapter-pills-row {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.book-sound-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+}
+
+/* Mobile Book Adaptations */
+@media (max-width: 768px) {
+  .physical-book-stage {
+    padding: 0.75rem 0.25rem;
+  }
+  .st-book-chassis {
+    width: 100% !important;
+    max-width: 440px !important;
+    height: auto !important;
+  }
+  .st-book-container {
+    width: 100% !important;
+    max-width: 440px !important;
+  }
+  .book-paper-stack-left,
+  .book-paper-stack-right,
+  .book-center-spine-highlight {
+    display: none !important;
+  }
+  .book-stage-nav-btn {
+    display: none !important;
+  }
+  .st-page-inner {
+    padding: 1.25rem 1rem;
+  }
+  .cover-ornate-frame {
+    padding: 1.25rem 0.85rem;
+    width: 96%;
+  }
+  .cover-book-title {
+    font-size: 1.4rem;
+  }
+  .book-chapter-pills-row {
+    display: none;
+  }
+  .book-controls-bar {
+    padding: 0.4rem 0.25rem;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .book-controls-bar .btn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.78rem;
+  }
+}
+
+/* Multi-Page Template Nav Header */
+.multipage-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.multipage-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.multipage-tab-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   Interactive Micro-Animations & Dynamic Hover Effects
+   ============================================================ */
+
+/* Global Interactive Card Hover */
+.interactive-hover-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  position: relative;
+}
+.interactive-hover-card:hover {
+  transform: translateY(-8px) scale(1.012);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 24px rgba(99, 102, 241, 0.25);
+  border-color: rgba(99, 102, 241, 0.45);
+}
+
+/* Interactive Button Hover */
+.interactive-hover-btn {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, filter 0.2s ease;
+}
+.interactive-hover-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+/* Navigation Interactive Link */
+.nav-interactive-link {
+  position: relative;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.nav-interactive-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+.nav-interactive-link:hover::after {
+  width: 100%;
+}
+.nav-interactive-link:hover {
+  color: #fff !important;
+}
+
+/* Book Artwork Animations */
+@keyframes mystic-glow {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(192, 132, 252, 0.6), 0 0 16px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(192, 132, 252, 0.9), 0 0 32px rgba(6, 182, 212, 0.5);
+  }
+}
+
+@keyframes celestial-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes wax-seal-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 2px 4px rgba(120,53,15,0.4)); }
+  50% { transform: scale(1.05); filter: drop-shadow(0 4px 10px rgba(180,83,9,0.7)); }
+}
+
+.anim-mystic-glow {
+  animation: mystic-glow 3s infinite ease-in-out;
+}
+
+.anim-celestial-spin {
+  animation: celestial-spin 25s infinite linear;
+}
+
+.anim-wax-seal {
+  animation: wax-seal-pulse 2.5s infinite ease-in-out;
+}
+
+/* ============================================================
+   Continuous 3-Page Scrollable Website Layout Styles
+   ============================================================ */
+.portfolio-page-section {
+  min-height: 85vh;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.portfolio-page-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 3rem 0;
+  opacity: 0.85;
+  user-select: none;
+}
+
+.page-step-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.divider-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+}
+
+/* ============================================================
+   High-Contrast Light Template Typography & Elements
+   ============================================================ */
+.light-template-container {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.light-template-container h1,
+.light-template-container h2,
+.light-template-container h3,
+.light-template-container h4 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.light-template-container p {
+  color: #334155 !important;
+}
+
+.light-template-container .meta-subtext,
+.light-template-container .text-muted {
+  color: #475569 !important;
+}
+
+.light-template-container .glass-panel,
+.light-template-container .interactive-hover-card {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06) !important;
+  color: #0f172a !important;
+}
+
+/* ============================================================
+   Print Styles for Resume Builder (A4 Pixel-Perfect Export)
+   ============================================================ */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .no-print, 
+  header, 
+  nav, 
+  footer, 
+  aside, 
+  .category-corners-hud, 
+  .category-corners-creative, 
+  .category-corners-student, 
+  .category-corners-design, 
+  .category-corners-business, 
+  .category-corners-freelance {
+    display: none !important;
+  }
+  .printable-resume-paper {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 14mm 16mm !important;
+    max-width: 210mm !important;
+    width: 210mm !important;
+    min-height: 297mm !important;
+    border: none !important;
+    margin: 0 auto !important;
+    page-break-after: avoid;
+  }
+  @page {
+    margin: 0;
+    size: A4 portrait;
+  }
+}
+
+/* ============================================================
+   Smartphone & Tablet Responsive Media Queries
+   ============================================================ */
+/* ============================================================
+   Smartphone & Tablet Responsive Media Queries
+   ============================================================ */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar Responsive Behavior */
+.desktop-nav,
+.desktop-cta {
+  display: flex !important;
+}
+.mobile-nav-toggle {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav,
+  .desktop-cta {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: flex !important;
+  }
+  .container {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+  .portfolio-page-section {
+    min-height: auto;
+    padding: 1.5rem 0;
+  }
+  .multipage-nav-header {
+    padding: 0.75rem 0.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .multipage-nav-header > div:last-child {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  /* Corner ornaments subtle scale down on mobile to avoid covering content */
+  .category-corners-hud > div,
+  .category-corners-creative > div,
+  .category-corners-student > div,
+  .category-corners-design > div,
+  .category-corners-business > div,
+  .category-corners-freelance > div {
+    transform: scale(0.65);
+    transform-origin: top left;
+  }
+  /* Resume preview mobile responsive layout */
+  .resume-split-row {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+  .resume-split-row > aside {
+    width: 100% !important;
+    margin: 0 0 1.25rem 0 !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 0.85rem !important;
+  }
+  .resume-grid-two-col {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+}
+
+/* Floating Background Switcher Responsive Behavior */
+@media (max-width: 640px) {
+  .bg-switcher-container {
+    bottom: 12px !important;
+    right: 12px !important;
+  }
+  .bg-pill-text-desktop {
+    display: none !important;
+  }
+  .bg-pill-text-mobile {
+    display: inline !important;
+  }
+  .bg-switcher-btn {
+    padding: 0.38rem 0.65rem !important;
+    font-size: 0.76rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 1.65rem !important;
+    line-height: 1.22 !important;
+  }
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  /* Floating Background Switcher minimal pill on phones */
+  .bg-switcher-container {
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+  .bg-pill-text,
+  .bg-pill-text-desktop,
+  .bg-pill-text-mobile {
+    display: none !important;
+  }
+  .bg-switcher-btn {
+    padding: 0.42rem 0.55rem !important;
+    border-radius: 9999px !important;
+    gap: 0.2rem !important;
+    min-width: unset !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6) !important;
+  }
+  /* Inputs prevent iOS auto-zoom */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+  /* Glass panel padding on mobile */
+  .glass-panel {
+    padding: 1.25rem 1rem !important;
+  }
+  .editor-header,
+  .resume-builder-header {
+    padding: 0.5rem 0.65rem !important;
+    gap: 0.4rem !important;
+  }
+  .resume-toolbar-box {
+    padding: 1rem 0.85rem !important;
+    border-radius: 14px !important;
+  }
+  .folioverse-ad-container {
+    margin: 1rem auto !important;
+    padding: 0.25rem !important;
+  }
+  .folioverse-ad-box {
+    padding: 0.65rem 0.75rem !important;
+  }
+}
+
+/* Ultra-compact phone screens (320px - 380px) */
+@media (max-width: 380px) {
+  .container {
+    padding-left: 0.55rem !important;
+    padding-right: 0.55rem !important;
+  }
+  h1 {
+    font-size: 1.45rem !important;
+    line-height: 1.2 !important;
+  }
+  h2 {
+    font-size: 1.15rem !important;
+  }
+  .gateway-card {
+    padding: 1.15rem 0.85rem !important;
+    border-radius: 16px !important;
+  }
+  .creation-gateway-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.1rem !important;
+  }
+  .btn {
+    padding: 0.5rem 0.85rem !important;
+    font-size: 0.84rem !important;
+  }
+  .navbar-logo-text {
+    font-size: 1.1rem !important;
+  }
+  .editor-btn-label {
+    display: none !important;
+  }
+}
+
+/* Resume Photo Uploader Hover & Print Optimization */
+.photo-hover-overlay {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+div:hover > .photo-hover-overlay {
+  opacity: 1 !important;
+}
+
+@media print {
+  .photo-hover-overlay,
+  .no-print {
+    display: none !important;
+  }
+  img {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
